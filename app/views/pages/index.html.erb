@@ -6,3 +6,7 @@
     <%= image_tag  ("chatlogo.png"), :class => "logo" %>
 
 </nav>
+
+<% @messages.each do |message| %>
+<%= message.content %>
+<% end %>
